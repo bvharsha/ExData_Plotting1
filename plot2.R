@@ -3,7 +3,7 @@ relevant.data <- data[data$Date %in% c("1/2/2007","2/2/2007") ,]
 
 conv.time <- strptime(paste(relevant.data$Date, relevant.data$Time, sep=" "), "%d/%m/%Y %H:%M:%S")
 
-png("plot2.png")
+png("plot2.png", width = 480, height = 480)
 
 # Dividing by 1000 to get the desired graph output as given in Coursera website
 
